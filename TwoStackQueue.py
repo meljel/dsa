@@ -39,16 +39,8 @@ class Queue():
     def enqueue(self, item):
         """enqueue(item: int or str)
            Add specified item to queue."""
-        # STACKS = self.stacks.getStacks()
         self.stacks.push(1, item)
-        
-        # elif self.lastMove == "deq":
-        #     for j in STACKS[1]:
-        #         k = STACKS[1].pop(-1)
-        #         STACKS[0].append(k)
-        # # elif self.stacks.height(2) == 0:
-        #     self.stacks.push(1,item)
-    
+            
     def dequeue(self):
         """dequeue() -> int or str
            Remove the item at the end of the queue. Return item. """
@@ -60,14 +52,6 @@ class Queue():
                 self.stacks.push(2, self.stacks.pop(1))
         
         return self.stacks.pop(2)
-        
-        # else: # if self.lunch:
-        #     stop = False
-        #     k = 0
-        #     while not stop:
-        #         k += 1
-        #         stop = self.stacks.pop(2)
-        #     return stop, k
     
     def timePass(self, time):
         """timePass(item: int or str) -> int
@@ -100,7 +84,8 @@ class Queue():
                 it += 1
 
             return becomeZero
-    
+
+# Testing
 # q = Queue(5)
 # q.enqueue(6)
 # q.enqueue(1)
