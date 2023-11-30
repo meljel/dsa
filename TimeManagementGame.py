@@ -6,16 +6,6 @@ Created on Wed Sep  1 14:58:47 2021
 @author: meljel
 """
 
-# You need to write and use a subclass of your Queue class from Exercise #2 so 
-# dequeue returns the first customer who hasn’t lost patience
-# Customers should have different patience levels (you can use Python’s  random 
-# library)
-# There needs to be an element of “time” to determine whether a customer is 
-# still in line (you can use Python’s time library)
-# The user interface for this game needs to explain how to play, tell the user 
-# when a customer enters the line or leaves because they lost patience, and 
-# when the game is over (the queue is empty)
-
 import random
 import TwoStackQueue as q
 
@@ -63,14 +53,11 @@ def main():
         for k in range(customers):
             # Randomly generate patience given the range [1,customers].
             line.enqueue(random.randint(1,customers + 1))
-        # patience = [random.randint(1,11) for k in range(customers)]
-        # print("list: " + str(line.getList()))
         
         seated, lost = 0,0
     
     # Run if user has not quit.
     while run: # or while run = 1
-        # patience = random.randint(0,10) # PLACEHOLDER
         
         # Break the loop if the line has been depleted.
         if line.length() == 0:
@@ -81,7 +68,6 @@ def main():
         # If their patience is 0 or None, proceed to the next customer in line.
         if not current:
             continue
-        # print("current = " + str(current))
         
         # Prompt user with three options for the current customer.
         print("\nA new customer is waiting. (Patience: " + str(current) + ")")
@@ -109,20 +95,15 @@ def main():
         elif i == "3":
             run = False
             break
-        
-        else:
-            # Failsafe. Shouldn't ever happen.
-            print("[Error] \
-                   Something weird happened (input validation for 3 options)")
-        
+
         # Lower each customer's patience by 1. 
         numLost = line.timePass(1)
         
         # Print how many customers are lost.
+        lost += numLost
         if numLost == 1:
             print("You lost a customer.")
         elif numLost > 1:
-            lost += numLost
             print("Uh oh! You lost", str(numLost), "customers.")
         
     # Run if user has quit.    
@@ -132,7 +113,7 @@ def main():
     
     # Print that the queue has been cleared, and the game is over.
     print("\nThere are no more customers in line. \n\
-You sat", str(seated), "customers and lost ", str(lost), "customers.\n\n\
+You sat", str(seated), "customers and lost", str(lost), "customers.\n\n\
 Thanks for playing!")
 
 main()
