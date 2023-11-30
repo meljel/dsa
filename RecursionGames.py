@@ -1,6 +1,47 @@
 # Melody Jing
 # 
 
+def main():
+    """main() -> None
+       Executes main game."""
+       
+    print("Welcome to the Recursion Calculator!")
+    
+    # Main while loop - option selection and quitting
+    while True:
+        print("\nChoose a function:\n\
+    1) Palindrome\n\
+    2) digitsToWords\n\
+    3) sumToTarget\n\
+    4) choose\n\
+    9) Quit")
+        
+        # Get initial input
+        opt = input("Option: ")
+        
+        # If not in the valid list, print error message
+        if opt not in ["1","2","3","4","9"]:
+            print("Please enter a valid option!")
+        
+        # Break from while loop; go to end of function main()
+        if opt == "9": break
+        
+        # Palindrome input validation
+        elif opt == "1": playPalindrome()
+        
+        # digitsToWords input validation
+        elif opt == "2": playDigitsToWords()
+        
+        # sumToTarget input validation
+        elif opt == "3": playSumToTarget()
+        
+        # choose input validation
+        elif opt == "4": playChoose()
+
+    # Quit message.
+    print("\nYou have left the Recursion Calculator. Bye!")
+
+
 def palindrome(word):
     """palindrome(word: str) -> bool
        Returns a boolean telling whether input string is a palindrome.
@@ -227,45 +268,5 @@ def playChoose():
     
     print(n, "choose", k, "is", str(choose(int(n),int(k)))+".")
 
-
-def main():
-    """main() -> None
-       Executes main game."""
-       
-    print("Welcome to the Recursion Calculator!")
-    
-    # Main while loop - option selection and quitting
-    while True:
-        print("\nChoose a function:\n\
-    1) Palindrome\n\
-    2) digitsToWords\n\
-    3) sumToTarget\n\
-    4) choose\n\
-    9) Quit")
-        
-        # Get initial input
-        opt = input("Option: ")
-        
-        # If not in the valid list, print error message
-        if opt not in ["1","2","3","4","9"]:
-            print("Please enter a valid option!")
-        
-        # Break from while loop; go to end of function main()
-        if opt == "9": break
-        
-        # Palindrome input validation
-        elif opt == "1": playPalindrome()
-        
-        # digitsToWords input validation
-        elif opt == "2": playDigitsToWords()
-        
-        # sumToTarget input validation
-        elif opt == "3": playSumToTarget()
-        
-        # choose input validation
-        elif opt == "4": playChoose()
-
-    # Quit message.
-    print("\nYou have left the Recursion Calculator. Bye!")
 
 main()
