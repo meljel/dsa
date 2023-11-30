@@ -47,7 +47,6 @@ class TwoStacks():
     def height(self, stackNum):
         """height(stackNum: int) -> int \n
            Return the size of the stack denoted by stackNum."""
-        # print(stackNum)
         
         # Decide which stack length to return. 
         if stackNum == 1:
@@ -62,10 +61,7 @@ class TwoStacks():
     def push(self, stackNum, item):
         """push(stackNum: int, item: int or str) \n
            Add item to top of the stack denoted by stackNum."""
-        # try:
         v = (self.stack1len + self.stack2len < self.maxLength)
-        # except NameError:
-        #     return print("Please enter a string or a number.")
         
         # Proceed only if maxLength has not been exceeded.
         if v:
@@ -126,6 +122,7 @@ class TwoStacks():
            Return a string representation of the array containing both stacks."""
         return str(self.stackArray)
 
+# Testing
 # ts = TwoStacks(7)
 # ts.push(1, "h")
 # ts.push(2, "i")

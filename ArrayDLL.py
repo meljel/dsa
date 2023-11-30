@@ -83,14 +83,6 @@ class DLLArray():
             else:
                 return False
     
-        # for i in range(self.maxLength):
-        #     val = self.array[3*i+2]
-            
-        #     if val == None:
-        #         return True
-            
-        #     elif val:
-        #         return False
     
     def insert(self, item):
         """insert(item: int)

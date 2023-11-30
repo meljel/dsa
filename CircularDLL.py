@@ -65,12 +65,10 @@ class CDLL():
         
         # Case 1: First item
         if self.head == None:
-            # print("1stcase")
             self.head = newNode
         
         # Case 2: Second item
         elif self.head.next == None and self.head.prev == None:
-            # print("2ndcase")
             self.head.setNext(newNode)
             self.head.setPrev(newNode)
 
@@ -79,7 +77,6 @@ class CDLL():
         
         # Case 3: All other items
         else:
-            # print("3rdcase")
             newNode.setNext(self.head)
             newNode.setPrev(self.head.prev)
 
@@ -133,7 +130,6 @@ class CDLL():
            Return the string format of a CDLL."""
         node = self.head
         listToPrint = [self.head.getValue()]
-        # i=0
         
         # Don't print if no head.
         if self.head == None:
@@ -146,12 +142,8 @@ class CDLL():
         # Iterate through list; print after.
         node = node.next
         while node is not self.head:
-            # print("value:",str(node.value)+"; \
-            #       pointers: ("+str(node.prev.value)+","+str(node.next.value)+")")
             listToPrint.append(node.getValue())
             node = node.next
-            # i+=1
-            # print(i)
             
         return listToPrint
     
