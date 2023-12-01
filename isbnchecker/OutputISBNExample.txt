@@ -1,0 +1,68 @@
+Valid ISBNs: 
+123456789X
+123456789X
+3728292737
+0205080057
+123456789X
+123456789X
+0000000000
+0943396042
+097522980X
+----------------
+Invalid ISBNs: 
+1232222456 (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+545654566d (character 10 is neither a digit nor x/X)
+1232542d24 (characters 1-9 are not all digits)
+214098359058 (is not 10 characters)
+ajj (is not 10 characters)
+233f949494 (characters 1-9 are not all digits)
+2948501958 (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+111111111X (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+314X243155 (characters 1-9 are not all digits)
+483899374Y (character 10 is neither a digit nor x/X)
+473282928733637339 (is not 10 characters)
+432222 (is not 10 characters)
+16736278282 (is not 10 characters)
+12345678910 (is not 10 characters)
+1234567894 (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+123456789a (character 10 is neither a digit nor x/X)
+12345678aX (characters 1-9 are not all digits)
+123456789Xasd;lfj (is not 10 characters)
+156789X (is not 10 characters)
+ (is not 10 characters)
+123456789 (is not 10 characters)
+99921-58-10-7 (is not 10 characters)
+9971-5-0210-0 (is not 10 characters)
+960-425-059-0 (is not 10 characters)
+abcxyz (is not 10 characters)
+abcdefghij (characters 1-9 are not all digits)
+False (is not 10 characters)
+continue (is not 10 characters)
+ (is not 10 characters)
+quit(0) (is not 10 characters)
+1122334455 (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+9a99b21-58c-10d-7e (is not 10 characters)
+   9d99e21-58fg-10h-7i (is not 10 characters)
+"hey this is fun" (is not 10 characters)
+'how about single quotes?' (is not 10 characters)
+\" escaped quotes? \" (is not 10 characters)
+\n (is not 10 characters)
+-80-902734-1-6 (is not 10 characters)
+1-84356--028-3 (is not 10 characters)
+0-684-84328-5 (is not 10 characters)
+0-8044-2957-X (is not 10 characters)
+0-85131---041-9 (is not 10 characters)
+a0-943396-04-2 (is not 10 characters)
+=0-9752298-0-X (is not 10 characters)
+0-9752298-0-X  # comment (is not 10 characters)
+0-9752299-0-X (is not 10 characters)
+-0-943-396-04(2) (is not 10 characters)
+9780943396042 (is not 10 characters)
+097522990X (the following equation is not true: (10c1+9c2+8c3+7c4+6c5+5c6+4c7+3c8+2c9+c10) mod 11 = 0
+ (is not 10 characters)
+ (is not 10 characters)
+ (is not 10 characters)
+ (is not 10 characters)
+ (is not 10 characters)
+ (is not 10 characters)
+ (is not 10 characters)
