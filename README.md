@@ -1,6 +1,6 @@
 # algorithms, data structures, et cetera
 <div id="overview">
-    A collection of my Computer Science projects from Sep 2020 - Mar 2022, including only algorithms, data structures, or related content! For game design projects, please <a href="mailto:mj56@rice.edu">contact me</a> and make sure to include your GitHub username!
+    A collection of my Computer Science projects from Sep 2020 - Mar 2022, including only algorithms, data structures, or related content! For game-based projects, please contact me (mj56 [at] rice.edu) and make sure to include your GitHub username!
     <br>Organized below in order of importance. Most of these projects are executable, and some of them include a GUI, although most graphics are quite basic. 
 </div>
 
